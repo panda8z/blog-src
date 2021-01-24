@@ -1,0 +1,181 @@
+yarn start
+yarn run v1.22.10
+$ gatsby develop
+success open and validate gatsby-configs - 0.078s
+success load plugins - 0.921s
+success onPreInit - 0.039s
+info One or more of your plugins have changed since the last time you ran Gatsby. As
+a precaution, we're deleting your site's cache to ensure there's no stale data.
+success initialize cache - 0.028s
+success copy gatsby files - 0.051s
+success onPreBootstrap - 0.015s
+{
+  deletePage: [Function (anonymous)],
+  createPage: [Function (anonymous)],
+  deleteNode: [Function (anonymous)],
+  deleteNodes: [Function (anonymous)],
+  createNode: [Function (anonymous)],
+  touchNode: [Function (anonymous)],
+  createNodeField: [Function (anonymous)],
+  createParentChildLink: [Function (anonymous)],
+  setWebpackConfig: [Function (anonymous)],
+  replaceWebpackConfig: [Function (anonymous)],
+  setBabelOptions: [Function (anonymous)],
+  setBabelPlugin: [Function (anonymous)],
+  setBabelPreset: [Function (anonymous)],
+  createJob: [Function (anonymous)],
+  createJobV2: [Function (anonymous)],
+  setJob: [Function (anonymous)],
+  endJob: [Function (anonymous)],
+  setPluginStatus: [Function (anonymous)],
+  createRedirect: [Function (anonymous)],
+  createPageDependency: [Function (anonymous)],
+  setPageData: [Function (anonymous)],
+  removePageData: [Function (anonymous)],
+  createServerVisitedPage: [Function (anonymous)],
+  createFieldExtension: [Function (anonymous)],
+  createTypes: [Function (anonymous)],
+  createResolverContext: [Function (anonymous)],
+  addThirdPartySchema: [Function (anonymous)],
+  printTypeDefinitions: [Function (anonymous)]
+}
+createSchemaCustomization 被调用了。。。
+success createSchemaCustomization - 0.034s
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode===  node:  {
+  id: '989de70e-26dd-5329-87d2-8f929c12fb67',
+  children: [],
+  parent: 'e2914dc4-b6c0-5fea-bbec-d287438a7643',
+  internal: {
+    content: '\n# 2020-09-12\n\n> this is markdown\n\n## sssss\n\nfeng zhi lvren ',
+    type: 'MarkdownRemark',
+    contentDigest: '744fcdb86385cc07109deb1eddda7736',
+    counter: 62,
+    owner: 'gatsby-transformer-remark'
+  },
+  frontmatter: {
+    title: 'My first blog post',
+    slug: '/blog/my-first-post',
+    date: '2019-05-04'
+  },
+  excerpt: '',
+  rawMarkdownBody: '\n# 2020-09-12\n\n> this is markdown\n\n## sssss\n\nfeng zhi lvren ',
+  fileAbsolutePath: '/Users/panda/panda8z/job2021/blog-src/content/blog/2020-09-12.md'
+} getNode:  [Function: getNode] value: /2020-09-12/
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode===  node:  {
+  id: '3a7abde4-98d3-5ec2-9b9b-d0067097e9c8',
+  children: [],
+  parent: '17308d3b-0de4-5edd-b61f-c7feacf209ce',
+  internal: {
+    content: '\n## fang\n\nsdfsdfsdfsdf\ngolang',
+    type: 'MarkdownRemark',
+    contentDigest: '790da89021c2a0d49ab9425ba3bc8a51',
+    counter: 63,
+    owner: 'gatsby-transformer-remark'
+  },
+  frontmatter: { title: 'Hello World', date: '2015-05-01T22:12:03.284Z' },
+  excerpt: '',
+  rawMarkdownBody: '\n## fang\n\nsdfsdfsdfsdf\ngolang',
+  fileAbsolutePath: '/Users/panda/panda8z/job2021/blog-src/content/blog/golang-first/index.md'
+} getNode:  [Function: getNode] value: /golang-first/
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+warn The gatsby-plugin-mdx plugin has generated no Gatsby nodes. Do you need it?
+success Checking for changed pages - 0.001s
+success source and transform nodes - 0.188s
+success building schema - 0.313s
+createPages 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+info Total nodes: 65, SitePage nodes: 3 (use --verbose for breakdown)
+success createPages - 0.035s
+success Checking for changed pages - 0.001s
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+onCreateNode 被调用了。。。
+success createPagesStatefully - 0.066s
+success update schema - 0.028s
+success write out redirect data - 0.001s
+success Build manifest and related icons - 0.118s
+success onPostBootstrap - 0.123s
+info bootstrap finished - 3.930s
+success onPreExtractQueries - 0.001s
+success extract queries from components - 0.372s
+success write out requires - 0.006s
+success run static queries - 0.019s - 2/2 107.63/s
+success run page queries - 0.010s - 3/3 306.84/s
+⠀
+You can now view panda8z-s-blog in the browser.
+⠀
+  http://localhost:8000/
+⠀
+View GraphiQL, an in-browser IDE, to explore your site's data and schema
+⠀
+  http://localhost:8000/___graphql
+⠀
+Note that the development build is not optimized.
+To create a production build, use gatsby build
+⠀
+success Building development bundle - 8.385s
+

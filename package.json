@@ -3,22 +3,36 @@
   "version": "1.0.0",
   "private": true,
   "description": "Panda8z`s Blog",
-  "author": "panda8z",
+  "author": "panda8z <panda8xy@gmail.com>",
+  "homepage": "https://github.com/panda8z/blog-src#reademe",
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panda8z/blog-src.git"
+  },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "panda8z",
+    "blog",
+    "博客",
+    "Panda张向北"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.10.0",
+    "gatsby-plugin-feed": "^2.12.0",
     "gatsby-plugin-google-analytics": "^2.10.0",
     "gatsby-plugin-manifest": "^2.11.0",
     "gatsby-plugin-mdx": "^1.9.0",
@@ -27,11 +41,23 @@
     "gatsby-plugin-sass": "^3.1.0",
     "gatsby-plugin-sharp": "^2.13.1",
     "gatsby-plugin-sitemap": "^2.11.0",
+    "gatsby-remark-copy-linked-files": "^2.9.0",
+    "gatsby-remark-images": "^3.10.0",
+    "gatsby-remark-prismjs": "^3.12.0",
+    "gatsby-remark-responsive-iframe": "^2.10.0",
+    "gatsby-remark-smartypants": "^2.9.0",
     "gatsby-source-filesystem": "^2.10.0",
+    "gatsby-transformer-remark": "^2.15.0",
     "gatsby-transformer-sharp": "^2.11.0",
+    "prismjs": "^1.23.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.32.5"
+    "sass": "^1.32.5",
+    "typeface-merriweather": "^1.1.13",
+    "typeface-montserrat": "^1.1.13"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
   }
 }
