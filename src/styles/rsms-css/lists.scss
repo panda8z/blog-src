@@ -1,0 +1,136 @@
+li {
+  margin-left: 0em;
+  margin-bottom: var(--baseline);
+}
+
+li > p + ul,
+li > p + ol {
+  /* <ul>|<ol> inside <li> that directly follows a <p> */
+  /* shave off 1 baseline from space in between paragraph and list */
+  margin-top: calc(var(--baseline) * -1);
+}
+
+li > p + ol {
+  /* i.e. <li><p>Sublist:</p><ol>... -- reduces space b/w P and OL */
+  margin-top: calc(var(--unit) * -2);
+}
+
+li.task-list-item {
+  list-style-type: none;
+
+  & > input[type=checkbox] {
+    list-style: none;
+    margin-right: 0.5em;
+    margin-left: -1.4em;
+    background: none;
+    appearance: none;
+    width:  1.5em;
+    height: var(--baseline);
+    display: inline-block;
+    position: relative;
+    border: none;
+    opacity:1;
+
+    &:before, &:after {
+      display: block;
+      position: absolute;
+      content: "X";
+      color: transparent;
+      left:   0;
+      top:    -0.25em;
+      bottom: -0.25em;
+      width:  1.1em;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      --webkit-touch-callout: none;
+    }
+
+    &:after {
+      /* box aligned with checkmark */
+      background-image: var(--icon-outline-url);
+    }
+
+    &[checked]:before {
+      /* checkmark aligned with box */
+      background-image: var(--icon-checkmark-url);
+    }
+  }
+}
+
+
+@supports (mask-image: linear-gradient(rgba(0, 0, 0, 1.0), red)) {
+  /* use mask so that check boxes matches --foreground-color */
+  li.task-list-item > input[type=checkbox] {
+    &:before, &:after {
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: center center;
+    }
+    &:after {
+      /* box aligned with checkmark */
+      background: var(--foreground-color);
+      mask-image: var(--icon-outline-url);
+    }
+
+    &[checked]:before {
+      /* checkmark aligned with box */
+      background: var(--foreground-color);
+      mask-image: var(--icon-checkmark-url);
+    }
+  }
+}
+
+
+.compact > li > p + ul,
+.compact > li > p + ol {
+  /* like above but for lists inside compact lists */
+  margin-top: calc(var(--blockSpacingBottom) * -1);
+}
+
+ul, ol {
+  list-style-position: outside;
+  --list-indentation: 2em;
+}
+
+ul.compact > li, ol.compact > li {
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 1.3em;
+  &.plain { list-style: none; }
+}
+
+/* custom start number -- undo reset */
+ol[start] {
+  padding-inline-start: var(--list-indentation);
+  /*list-style-position: inside;*/
+  /*& li {
+    color: red;
+  }*/
+}
+
+ol:not([start]) {
+  list-style: none;
+  counter-reset: ol-counter;
+  padding-left: var(--list-indentation);
+}
+
+ol:not([start]) > li {
+  counter-increment: ol-counter;
+  position: relative;
+}
+
+ol:not([start]) > li::before {
+  content: counter(ol-counter) ". ";
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  position: absolute;
+  --space: 0.5em;
+  --width: calc(var(--list-indentation) - var(--space));
+  left: calc(-1 * calc(var(--width) + var(--space)));
+  width:  var(--width);
+  height: var(--lineHeight);
+  text-align: left;
+}

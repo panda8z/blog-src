@@ -194,7 +194,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
-        path: i === 0 ? `/` : `/${i + 1}`, // 跟路径开始就是列表页
+        path: `/list-${i + 1}`, // 跟路径开始就是列表页
         component: path.resolve(`${__dirname}/src/templates/blog-list.js`),
         context: {
           limit: postsPerPage, // pageSize

@@ -37,6 +37,9 @@ const SEO = ({ description, lang, meta, title }) => {
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      script={[
+        { "src": "../styles/rsms-css/main.js", "type": "text/javascript" }
+      ]}
       meta={[
         {
           name: `description`,

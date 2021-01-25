@@ -1,0 +1,104 @@
+.highlight > pre {
+  --bg: #f5f5f5;
+  --fg: #000;
+  --comment: #8a8a8a;
+  --punctuation: #8c8c8c;
+  --operator: #555;
+  --identifier: inherit;
+  --control-flow: inherit;
+  --constant: inherit; /* strings etc */
+  --numeric-constant: var(--constant);
+
+  padding: 1em;
+  background: var(--bg);
+  color: var(--fg);
+  border-radius: calc(var(--unit) * 0.5);
+
+  @media (prefers-color-scheme: dark) {
+    --bg: #222;
+    --fg: #eee;
+    --comment: #999;
+    --punctuation: #aaa;
+    --operator: #ccc;
+    --constant: lightblue;
+  }
+
+  /* punctuation */
+   .p { color: var(--punctuation); }
+
+  /* syntax error */
+  /* .err { color: #ff0015; }*/
+
+  /* names / identifiers */
+   .n,
+   .na,
+   .nb,
+   .nc,
+   .no,
+   .nd,
+   .ni,
+   .ne,
+   .nf,
+   .nl,
+   .nn,
+   .nx,
+   .py,
+   .nt,
+   .nv,
+   .vc,
+   .vg,
+   .vi,
+   .bp { color: var(--identifier); }
+
+  /* name of function */
+   .nf { font-weight: 500; }
+
+  /* operators like + and * */
+  /* .g,  .gd { }*/
+   .o,
+   .ow { color: var(--operator); }
+
+   .c,
+   .cm,
+   .cp,
+   .c1,
+   .cs { color: var(--comment); font-style: italic; }
+
+  /* control flow */
+   .k,
+   .kc,
+   .kd,
+   .kn,
+   .kp,
+   .kr,
+   .kt { color: var(--control-flow); font-weight: 500; }
+
+  /* strings */
+   .s,
+   .sb,
+   .sd,
+   .sc,
+   .s2,
+   .se,
+   .sh,
+   .si,
+   .sx,
+   .sr,
+   .ss,
+   .s1 { color: var(--constant); }
+
+  /* number */
+   .m,  .mi,  .mf { color: var(--numeric-constant); }
+
+  /* ? */
+  /* .l,
+   .ld,
+   .m,
+   .mf,
+   .mh,
+   .mi,
+   .mo,
+   .nx,
+   .il { color: #ff0000; }*/
+}
+

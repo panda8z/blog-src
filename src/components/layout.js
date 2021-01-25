@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+// import './raster2/raster2-react.js'
+// import '../styles/rsms-css/less.js'
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -29,7 +31,7 @@ const Layout = ({ location, title, children }) => {
       }}>
         © {new Date().getFullYear()}, All rights reserved panda8z.
         {` `}
-        Built by <a href="https://blog.panda8z.com" target="_blank" rel="noreferrer" >Panda8z</a> with love
+        Built by <a href="https://blog.panda8z.com" target="_blank" rel="noreferrer" >Panda8z</a> 。
       </footer>
     </div>
   )

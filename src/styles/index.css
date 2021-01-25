@@ -1,0 +1,7 @@
+html {
+  background: var(--background-color);
+}
+r-grid.main h1 {
+  margin-top: 4rem;
+}
+
