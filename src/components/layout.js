@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 // import './raster2/raster2-react.js'
 // import '../styles/rsms-css/less.js'
 
+// import './layout.css'
+
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath

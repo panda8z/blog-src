@@ -110,6 +110,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // 给博客博文定义模板
   // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const postList = path.resolve(`${__dirname}/src/templates/blog-list.js`)
 
   // 通过 GraphQL 获取所有 markdown文件的节点
   // Get all markdown blog posts sorted by date
@@ -127,6 +128,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             }
             frontmatter {
               slug
+              draft
             }
           }
         }
@@ -151,7 +153,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
   if (posts.length > 0) {
-
     // 创建博文页面
     posts.forEach((post, index) => {
       const previousPostId = index === 0 ? null : posts[index - 1].id
@@ -167,27 +168,26 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           nextPostId,
         },
       })
-
-
-
     })
+  }
 
-    // 查询所有不是草稿的
-    const withoutDraft = await graphql(
-      `
-        {
-          allMarkdownRemark(
-            sort: { fields: [frontmatter___date], order: ASC, filter: {frontmatter: {draft: {ne: true}} }
-            limit: 1000
-          ) {
-            nodes {
-              id
-            }
+  // 查询所有不是草稿的
+  const withoutDraft = await graphql(
+    `
+    {
+      allMarkdownRemark(limit: 1000, sort: {order: ASC, fields: frontmatter___date}, filter: {frontmatter: {draft: {ne: true}}}) {
+        nodes {
+          frontmatter {
+            slug
           }
         }
-      `
-    )
-    const allPublishedPosts = withoutDraft.data.allMarkdownRemark.nodes
+      }
+    }
+    `
+  )
+  const allPublishedPosts = withoutDraft.data.allMarkdownRemark.nodes
+  console.log('allPublishedPosts =', allPublishedPosts)
+  if (allPublishedPosts.length > 0) {
     // 创建博客列表页面
     const postsPerPage = 3
     const numPages = Math.ceil(allPublishedPosts.length / postsPerPage)
@@ -195,7 +195,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
         path: `/list-${i + 1}`, // 跟路径开始就是列表页
-        component: path.resolve(`${__dirname}/src/templates/blog-list.js`),
+        component: postList,
         context: {
           limit: postsPerPage, // pageSize
           skip: i * postsPerPage, // steps
@@ -204,7 +204,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         },
       })
     })
-
   }
 }
 

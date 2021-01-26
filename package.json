@@ -19,7 +19,7 @@
     "Panda张向北"
   ],
   "scripts": {
-    "dev": "gatsby develop",
+    "dev": "gatsby develop --verbose",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",

@@ -5,7 +5,17 @@ import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 
-class BlogIndex extends React.Component {
+export default class BlogIndex extends React.Component {
+
+  constructor(props) {
+    super(props)
+    console.log('BlogIndex props = ', props)
+    this.props = props
+    this.state = {
+
+    }
+  }
+
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -14,19 +24,19 @@ class BlogIndex extends React.Component {
     const { currentPage, numPages } = this.props.pageContext
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
-    const prevPageUrl = Number(currentPage - 1) === 1 ? '/' : '/' + Number(currentPage - 1).toString()
-    const nextPageUrl = '/' + Number(currentPage + 1).toString()
+    const prevPageUrl = '/list-' + Number(currentPage - 1).toString()
+    const nextPageUrl = '/list-' + Number(currentPage + 1).toString()
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={siteTitle} keywords={siteKeywords} />
         <Bio />
-        <ol style={{ listStyle: `none` }}>
+        <ul style={{ listStyle: 'none', padding: 0, marginTop: '30px' }}>
           {posts.map(({ node }) => {
             console.log(node)
             const url = '/' + (node.frontmatter.slug || node.fields.slug)
             return (
-              <li key={url}>
+              <li key={url} >
                 <article
                   className="post-list-item"
                   itemScope
@@ -44,14 +54,14 @@ class BlogIndex extends React.Component {
               </li>
             )
           })}
-        </ol>
+        </ul>
         <ul
           style={{
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: 'space-between',
             alignItems: 'center',
-            listStyle: 'none',
+            listStyleType: 'none',
             height: '1rem',
             padding: 0,
           }}
@@ -69,7 +79,7 @@ class BlogIndex extends React.Component {
               }}
             >
               <Link
-                to={`/${i === 0 ? '' : i + 1}`}
+                to={`/list-${i + 1}`}
                 style={{
                   padding: "0.5rem",
                   textDecoration: 'none',
@@ -92,7 +102,6 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
 
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
@@ -103,6 +112,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
+      filter: {frontmatter: {draft: {ne: true}}}
       limit: $limit
       skip: $skip
     ) {
