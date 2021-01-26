@@ -1,7 +1,9 @@
 
 // custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
+// import "typeface-montserrat"
+// import "typeface-merriweather"
+
+import './src/styles/InterWebFont/inter.css'
 // normalize CSS across browsers
 import "./src/styles/normalize.css"
 
