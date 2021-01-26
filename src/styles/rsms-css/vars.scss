@@ -31,7 +31,7 @@
 }}*/
 :root {
   --sansFont: "Inter";
-  --titleFont: "InterDisplay";
+  --titleFont: "Inter";
   --monoFont: "IBM Plex Mono";
 
   --fontSize: 16px;
@@ -128,7 +128,7 @@
 
 @supports (font-variation-settings: normal) {:root {
   --sansFont: "Inter var";
-  --titleFont: "InterDisplay var";
+  --titleFont: "Inter var";
 }}
 
 @media only screen and (min-resolution: 1.5dppx) { :root { --displayScale: 1.5; --pixel: 0.75px; }}
