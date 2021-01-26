@@ -114,7 +114,7 @@ r-cell[order="14"]  { order: 14 }
 r-cell[order="15"]  { order: 15 }
 r-cell[order="16"]  { order: 16 }
 
-@media (--viewport-small) {
+@media screen and (max-width: 1024px) {
   r-grid[columns-s="1"] { --grid-tc: repeat(1, 1fr) }
   r-grid[columns-s="2"] { --grid-tc: repeat(2, 1fr) }
   r-grid[columns-s="3"] { --grid-tc: repeat(3, 1fr) }
@@ -213,7 +213,7 @@ r-cell[order="16"]  { order: 16 }
   r-cell[order-s="16"]  { order: 16 }
 }
 
-@media (--viewport-xsmall) {
+@media screen and (max-width: 640px) {
   r-grid[columns-xs="1"] { --grid-tc: repeat(1, 1fr) }
   r-grid[columns-xs="2"] { --grid-tc: repeat(2, 1fr) }
   r-grid[columns-xs="3"] { --grid-tc: repeat(3, 1fr) }

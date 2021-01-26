@@ -11,10 +11,9 @@ import "./src/styles/normalize.css"
 // custom CSS styles
 // import "./src/styles/style.css"
 
-import './src/styles/rsms-css/rsms.scss'
-
+// rsms.me styles
+import './src/styles/rsms-css/index.scss'
 import './src/styles/rsms-css/main.js'
-
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"

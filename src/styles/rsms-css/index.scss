@@ -16,7 +16,7 @@
   font-variant-ligatures: contextual common-ligatures;
   background-color: var(--letterbox-color);
 
-  @media (--viewport-xsmall) {
+  @media screen and (max-width: 640px) {
     background-color: initial;
   }
 }
@@ -38,11 +38,11 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
 
-  @media (--viewport-small) {
+  @media screen and (max-width: 1024px) {
     --body-padding-y: calc(var(--unit) * 4);
   }
 
-  @media (--viewport-xsmall) {
+  @media screen and (max-width: 640px) {
     --body-padding-x: calc(var(--unit) * 3);
     --body-padding-y: calc(var(--unit) * 2);
   }
@@ -167,13 +167,13 @@ r-cell.fullwidth {
   @mixin font-title-2{}
 }
 
-@media (--viewport-xsmall-inv) {
+@media screen and (min-width: 641px) {
   .only-viewport-xsmall {
     display: none;
   }
 }
 
-@media (--viewport-small-inv) {
+@media screen and (min-width: 1025px) {
   .only-viewport-small {
     display: none;
   }
@@ -509,7 +509,7 @@ pre {
   font-size: 0.95rem;
   line-height: 1.4;
 
-  @media (--viewport-xsmall) {
+  @media screen and (max-width: 640px) {
     font-size: 0.85rem;
   }
 
@@ -615,7 +615,7 @@ p + table {
 
 /* ———— grid ———— (in addition to grid.css) */
 r-grid {
-  @media (--viewport-xsmall) {
+  @media screen and (max-width: 640px) {
     --row-gap: calc(var(--unit) * 6);
   }
 }
@@ -681,7 +681,7 @@ r-grid {
   column-count: 8;
 }
 
-@media (--viewport-small) {
+@media screen and (max-width: 1024px) {
   [flow-cols-s="1"] {
     column-count: 1;
   }
@@ -715,7 +715,7 @@ r-grid {
   }
 }
 
-@media (--viewport-xsmall) {
+@media screen and (max-width: 640px) {
   [flow-cols-xs="1"] {
     column-count: 1;
   }
@@ -756,7 +756,7 @@ r-grid.main {
     height: calc(var(--line-height) * 4);
     margin-top: calc(var(--unit) * 22);
 
-    @media (--viewport-xsmall) {
+    @media screen and (max-width: 640px) {
       margin-top: calc(var(--unit) * 8);
     }
   }
@@ -765,7 +765,7 @@ r-grid.main {
     height: calc(var(--unit) * 43);
     padding-top: calc(var(--unit) * 8);
 
-    @media (--viewport-xsmall) {
+    @media screen and (max-width: 640px) {
       padding-top: 0;
       height: calc(var(--unit) * 30);
     }
@@ -829,7 +829,7 @@ r-grid.main {
         }
       }
 
-      @media (--viewport-xsmall) {
+      @media screen and (max-width: 640px) {
         &.focus0,
         &.focus1,
         &.focus2,
@@ -862,7 +862,7 @@ r-grid.main {
 
   /* .menu */
 
-  @media (--viewport-xsmall) {
+  @media screen and (max-width: 640px) {
     padding-top: calc(var(--unit) * 2);
   }
 
@@ -897,7 +897,7 @@ r-grid.main {
   }
 
   & .intro {
-    @media (--viewport-xsmall) {
+    @media screen and (max-width: 640px) {
       /*padding-top: calc(var(--unit) * 4);*/
       /*border-top: 0.15rem solid var(--foreground-color);*/
       padding-bottom: calc(var(--unit) * 4);
@@ -1055,7 +1055,7 @@ r-grid.main.simple {
   }
 
   & .bio {
-    @media (--viewport-xsmall) {
+    @media screen and (max-width: 640px) {
       padding-bottom: calc(var(--unit) * 4);
       border-bottom: 0.15rem solid var(--foreground-color);
     }
@@ -1180,11 +1180,11 @@ r-grid.main.simple {
     line-height: 1.2;
     color: var(--foreground-color);
 
-    @media (--viewport-body-max-width) {
+    @media screen and (min-width: 1215px) {
       --font-size: 2.5rem;
     }
 
-    @media (--viewport-xsmall) {
+    @media screen and (max-width: 640px) {
       --font-size: calc(100vw / 20);
     }
 
@@ -1263,7 +1263,7 @@ r-grid.main.simple {
         );
 
         /* hide in single-column layout to avoid pushing down the main content */
-        @media (--viewport-small) {
+        @media screen and (max-width: 1024px) {
           display: none;
         }
 
@@ -1296,7 +1296,7 @@ r-grid.main.simple {
       margin-top: calc(var(--line-height) * 2);
       margin-bottom: 0;
 
-      @media (--viewport-small) {
+      @media screen and (max-width: 1024px) {
         margin-top: 0;
       }
     }
@@ -1305,7 +1305,7 @@ r-grid.main.simple {
       grid-column-start: 2;
       grid-column-end: span 4;
 
-      @media (--viewport-small) {
+      @media screen and (max-width: 1024px) {
         grid-column: 1 / -1;
       }
 
@@ -1398,7 +1398,7 @@ r-grid.main.simple {
     padding-top: var(--body-padding-y);
     padding-bottom: calc(var(--body-padding-y) * 2);
 
-    /*@media (--viewport-xsmall) {
+    /*@media screen and (max-width: 640px) {
       margin-left: calc(var(--body-padding-y) * -1);
       margin-right: calc(var(--body-padding-y) * -1);
     }*/

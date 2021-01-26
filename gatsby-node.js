@@ -3,7 +3,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 // 第一个被调用 自定义 schema 
 exports.createSchemaCustomization = ({ actions }) => {
-  console.dir(actions)
+  // console.dir(actions)
   console.log("createSchemaCustomization 被调用了。。。")
   // {
   //   deletePage: [Function (anonymous)],
@@ -94,7 +94,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   // 给 MarkdownRemark 节点 增加一个 slug 属性
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
-    console.log('onCreateNode===', ' node: ', node, 'getNode: ', getNode, 'value:', value)
+    // console.log('onCreateNode===', ' node: ', node, 'getNode: ', getNode, 'value:', value)
     createNodeField({
       name: `slug`,
       node,

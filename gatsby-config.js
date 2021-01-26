@@ -26,7 +26,7 @@ module.exports = {
     // TODO
     "gatsby-transformer-sharp",
     // TODO
-    `gatsby-plugin-feed`,
+    "gatsby-plugin-feed",
     // 支持 meta data 自定义
     "gatsby-plugin-react-helmet",
     // 支持 自动 sitemap 生成
@@ -86,24 +86,30 @@ module.exports = {
       },
       __key: "pages",
     },
+    // markdown 转换插件
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          // markdown 图片插件
           {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 630,
             },
           },
+          // markdown 支持 iframe 插件
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          // markdown 代码高亮插件
           `gatsby-remark-prismjs`,
+          // TODO
           `gatsby-remark-copy-linked-files`,
+          // TODO
           `gatsby-remark-smartypants`,
         ],
       },
