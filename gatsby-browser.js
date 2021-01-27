@@ -16,7 +16,7 @@ import "./src/styles/normalize.css"
 import './src/styles/rsms-css/index.scss'
 import './src/styles/rsms-css/main.js'
 
-import "./src/styles/style.css"
+// import "./src/styles/style.css"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"

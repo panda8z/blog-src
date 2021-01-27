@@ -892,11 +892,11 @@ r-grid.main {
   }
 
   /* hot orange sphere, matching the favicon */
-  & .menu a:first-child {
+  .menu a:first-child {
     color: var(--hot-orange) !important;
   }
 
-  & .intro {
+  .intro {
     @media screen and (max-width: 640px) {
       /*padding-top: calc(var(--unit) * 4);*/
       /*border-top: 0.15rem solid var(--foreground-color);*/
@@ -908,14 +908,14 @@ r-grid.main {
       @include font-title-2;
     }
 
-    & .quick-links {
+    .quick-links {
       margin-top: calc(var(--unit) * 6);
 
       display: flex;
       flex-direction: column;
       align-items: flex-start;
 
-      & a {
+      a {
         @include font-title-3;
         display: block;
         padding: calc(var(--unit) * 2) calc(var(--unit) * 3);
