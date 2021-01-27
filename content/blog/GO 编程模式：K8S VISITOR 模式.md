@@ -1,6 +1,6 @@
 ---
 slug: go-program-pattern-visitor
-title: "GO 编程模式09：K8S VISITOR 模式
+title: GO 编程模式09：K8S VISITOR 模式
 date: 2021-01-24   11:09:00
 ---
 

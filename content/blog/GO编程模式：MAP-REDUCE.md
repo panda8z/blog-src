@@ -2,6 +2,7 @@
 slug: go-program-pattern-map-reduce
 title: GO编程模式05：MAP-REDUCE
 date: 2021-01-24  11:05:00
+showInIndex: true
 ---
 
 ![img](https://coolshell.cn/wp-content/uploads/2020/12/go.map_.reduce-300x192.png)

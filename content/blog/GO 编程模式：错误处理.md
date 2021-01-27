@@ -2,19 +2,19 @@
 slug: go-program-pattern-handle-errors
 title: GO 编程模式02：错误处理
 date: 2021-01-24  11:02:00
+showInIndex: true
 ---
 
 ![img](https://tva1.sinaimg.cn/large/0081Kckwgy1gm572bpcnsj308c05674c.jpg)
 
 
-- [GO 编程模式：错误处理](#go-编程模式错误处理)
-  - [C语言的错误检查](#c语言的错误检查)
-  - [Java的错误处理](#java的错误处理)
-  - [Go语言的错误处理](#go语言的错误处理)
-  - [资源清理](#资源清理)
-  - [Error Check Hell](#error-check-hell)
-  - [包装错误](#包装错误)
-  - [参考文章](#参考文章)
+- [C语言的错误检查](#c语言的错误检查)
+- [Java的错误处理](#java的错误处理)
+- [Go语言的错误处理](#go语言的错误处理)
+- [资源清理](#资源清理)
+- [Error Check Hell](#error-check-hell)
+- [包装错误](#包装错误)
+- [参考文章](#参考文章)
 
 错误处理一直以一是编程必需要面对的问题，错误处理如果做的好的话，代码的稳定性会很好。不同的语言有不同的出现处理的方式。Go语言也一样，在本篇文章中，我们来讨论一下Go语言的出错出处，尤其是那令人抓狂的 `if err != nil` 。
 
