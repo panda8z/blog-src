@@ -45,7 +45,7 @@ deploy:
     github_token: $GITHUB_TOKEN_BLOG_SRC  # Set in the settings page of your repository, as a secure variable
     keep_history: true
     local_dir: ./public
-    target_branch: gh-pages.
+    target_branch: gh-pages
     allow_empty_commit: true
     on:
       branch: master
