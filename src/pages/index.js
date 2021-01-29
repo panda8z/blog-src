@@ -1,7 +1,7 @@
 import { graphql, Link } from 'gatsby'
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import SEO from '../components/SEO'
+import SEO from '../components/seo';
 
 
 export default class Index extends Component {

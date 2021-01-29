@@ -94,6 +94,3 @@ SEO.propTypes = {
 }
 
 export default SEO
-      // script={[
-      //   { "src": "../styles/rsms-css/main.js", "type": "text/javascript" }
-      // ]}

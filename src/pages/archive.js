@@ -4,7 +4,7 @@ import ArticleList from '../components/archive/ArticleList';
 import BlogList from '../components/archive/BlogList';
 import DairyList from '../components/archive/DairyList';
 import NoteList from '../components/archive/Notelist';
-import SEO from '../components/SEO';
+import SEO from '../components/seo';
 const tabBtnStyle = {
   marginRight: "20px",
   fontFamily: 'Inter var',
