@@ -2,6 +2,7 @@
 slug: go-program-pattern-slice-interface-time
 title: GO编程模式01：切片，接口，时间和性能
 date: 2021-01-24  11:01:00
+type: blog
 ---
 
 ![img](https://tva1.sinaimg.cn/large/0081Kckwgy1gm57390hfjj308c04pt8o.jpg)

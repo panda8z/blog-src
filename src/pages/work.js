@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+import SEO from '../components/SEO';
 
 export default class Work extends Component {
 
@@ -18,6 +19,7 @@ export default class Work extends Component {
   render() {
     return (
       <div>
+        <SEO></SEO>
         <r-grid class="main" columns="6" columns-s="4" columns-xs="2">
 
           <r-cell order="-10" span="4" span-s="2">

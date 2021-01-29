@@ -3,6 +3,7 @@ slug: go-program-pattern-handle-errors
 title: GO 编程模式02：错误处理
 date: 2021-01-24  11:02:00
 showInIndex: true
+type: blog
 ---
 
 ![img](https://tva1.sinaimg.cn/large/0081Kckwgy1gm572bpcnsj308c05674c.jpg)

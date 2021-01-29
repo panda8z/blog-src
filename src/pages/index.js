@@ -1,6 +1,7 @@
 import { graphql, Link } from 'gatsby'
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+import SEO from '../components/SEO'
 
 
 export default class Index extends Component {
@@ -25,6 +26,7 @@ export default class Index extends Component {
   render() {
     return (
       <div>
+        <SEO></SEO>
         <r-grid class="main" columns="6" columns-s="4" columns-xs="2">
           <r-cell order="-10" span="4" span-s="2">
             <h1>Hello，I`m Panda 张向北</h1>
@@ -84,7 +86,7 @@ export default class Index extends Component {
           <r-cell class="intro" order-s="-2" order-xs="-2" span="2" span-s="3" span-xs="row">
             <p>{'I’m a Chinese he/him living in ShenZhen, China. Software is the medium through which I express myself.'}</p>
             <div className="quick-links">
-              <Link to="/list-1">Recent Articles</Link>
+              <Link to="/archive/">Recent Articles</Link>
             </div>
           </r-cell>
         </r-grid>

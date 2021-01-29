@@ -3,6 +3,7 @@ slug: alphabet-RTL
 title: RTL名词解释
 date: 2021-01-24  12:04:00
 draft: true
+type: blog
 ---
 
 在EDA设计中RTL表示 寄存器传输级

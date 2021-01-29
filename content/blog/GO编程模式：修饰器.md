@@ -2,6 +2,7 @@
 slug: go-program-pattern-decorator
 title: GO 编程模式07：修饰器
 date: 2021-01-24  11:07:00
+type: blog
 ---
 
 ![img](https://coolshell.cn/wp-content/uploads/2017/06/go-hardhat.png)

@@ -1,4 +1,5 @@
 import * as React from "react"
+import SEO from "../components/SEO"
 
 // styles
 const pageStyles = {
@@ -100,6 +101,7 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
+      <SEO></SEO>
       <title>Home Page</title>
       <h1 style={headingStyles}>
         Congratulations

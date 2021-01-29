@@ -45,7 +45,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `${__dirname}/content/images/icon.png`,
+        icon: `${__dirname}/content/images/icon.svg`,
       },
     },
     // 支持 使用mdx想markdown里添加components
@@ -76,6 +76,15 @@ module.exports = {
         path: `${__dirname}/content/blog`,
       },
       __key: "blog",
+    },
+    // 配置文件读取：article
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "article",
+        path: `${__dirname}/content/article`,
+      },
+      __key: "article",
     },
     // 配置文件读取：pages
     {

@@ -2,6 +2,7 @@
 slug: go-program-pattern-pipeline
 title: GO编程模式08：PIPELINE
 date: 2021-01-24   11:08:00
+type: blog
 ---
 
 ![img](https://coolshell.cn/wp-content/uploads/2020/12/go.line_.-1024x191.png)

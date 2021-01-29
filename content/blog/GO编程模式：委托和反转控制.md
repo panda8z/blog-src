@@ -3,6 +3,7 @@ slug: go-program-pattern-delegation-and-reverse-control
 title: GO编程模式04：委托和反转控制
 date: 2021-01-24  11:04:00
 showInIndex: true
+type: blog
 ---
 
 ![img](https://coolshell.cn/wp-content/uploads/2020/12/go.pair_-300x298.png)

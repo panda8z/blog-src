@@ -37,8 +37,10 @@ const SEO = ({ description, lang, meta, title }) => {
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
-      script={[
-        { "src": "../styles/rsms-css/main.js", "type": "text/javascript" }
+      link={[
+        { rel: "shortcut icon", href:"../../content/images/favicon.ico"},
+        { rel: "icon", type: "image/svg+xml", size: "any", href:"../../content/images/icon.svg"},
+        { rel: "apple-touch-icon", href:"../../content/images/icon.ico"}
       ]}
       meta={[
         {
@@ -92,3 +94,6 @@ SEO.propTypes = {
 }
 
 export default SEO
+      // script={[
+      //   { "src": "../styles/rsms-css/main.js", "type": "text/javascript" }
+      // ]}

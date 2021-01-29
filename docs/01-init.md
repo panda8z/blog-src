@@ -1,4 +1,11 @@
 
+# 项目启动
+
+本项目使用 ReactJS + Gatsby + HTML + CSS 作为Web前端。
+构建 panda8z自己的内容发布系统。
+
+## 做一个静态动态都扛得住的博客
+
 ## project init
 
 

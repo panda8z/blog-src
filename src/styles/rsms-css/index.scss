@@ -761,7 +761,7 @@ r-grid.main {
     }
   }
 
-  & .menu {
+   .menu {
     height: calc(var(--unit) * 43);
     padding-top: calc(var(--unit) * 8);
 
@@ -770,7 +770,7 @@ r-grid.main {
       height: calc(var(--unit) * 30);
     }
 
-    & > div {
+    div {
       margin: 0;
       padding: 0;
       /*transition: 120ms ease-out margin;*/
@@ -840,7 +840,7 @@ r-grid.main {
         }
       }
 
-      & a {
+    a {
         @include font-title-2;
         color: inherit;
         user-select: none;
@@ -866,11 +866,11 @@ r-grid.main {
     padding-top: calc(var(--unit) * 2);
   }
 
-  & iframe {
+  iframe {
     border: none;
   }
 
-  & img {
+  img {
     max-width: 100%;
   }
 
@@ -904,7 +904,7 @@ r-grid.main {
       border-bottom: 0.15rem solid var(--foreground-color);
     }
 
-    & > p {
+    p {
       @include font-title-2;
     }
 
@@ -943,21 +943,21 @@ r-grid.main {
     @include default-dark-mode-vars;
   }
 
-  & r-grid.main {
+  r-grid.main {
     grid-row-gap: calc(var(--unit) * 3);
 
-    & hr.section {
+    hr.section {
       margin-top: calc(var(--unit) * 4);
     }
 
-    & .year {
+    .year {
       margin-bottom: calc(var(--unit) * 2);
     }
 
-    & .post {
+    .post {
       margin-bottom: calc(var(--unit) * 2);
 
-      & .excerpt {
+      .excerpt {
         word-break: break-word;
       }
     }
@@ -986,22 +986,21 @@ r-grid.main {
   r-grid.main {
     margin-top: calc(var(--unit) * 6);
 
-    & time {
+    time {
       font-weight: 500;
     }
 
-    & .home {
+    .home {
       @mixin simple-home-link{}
     }
 
-    & h1 {
+    h1 {
       margin-top: calc(var(--unit) * 5);
     }
 
-    & .body {
+    .body {
       overflow-x: hidden;
-
-      & img {
+      img {
         /* images in blog posts are designed for white backgrounds */
         /*@media (prefers-color-scheme: dark) {
           background-color: white;
@@ -1021,11 +1020,11 @@ r-grid.main {
 r-grid.main.simple {
   margin-top: calc(var(--unit) * 6);
 
-  & .home {
+  .home {
     @mixin simple-home-link{}
   }
 
-  & h1 {
+  h1 {
     margin-top: calc(var(--unit) * -1);
   }
 }
@@ -1050,26 +1049,26 @@ r-grid.main.simple {
     }
   }*/
 
-  & .intro {
+  .intro {
     @include font-title-2;
   }
 
-  & .bio {
+  .bio {
     @media screen and (max-width: 640px) {
       padding-bottom: calc(var(--unit) * 4);
       border-bottom: 0.15rem solid var(--foreground-color);
     }
 
-    & > img {
+  img {
       margin-top: calc(var(--unit) * 0.5);
       border-radius: calc(var(--unit) * 0.25);
     }
 
-    & .link-list {
+  .link-list {
       @include font-title-2;
       margin-top: calc(var(--unit) * 6);
 
-      & a {
+      a {
         display: block;
         color: inherit;
       }
