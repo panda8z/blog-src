@@ -41,11 +41,12 @@ branches:
     - /.*/
 deploy:
     provider: pages
+    repo: panda8z/panda8z.github.io
     skip_cleanup: true
     github_token: $GITHUB_TOKEN_BLOG_SRC  # Set in the settings page of your repository, as a secure variable
-    keep_history: true
+    keep_history: false
     local_dir: ./public
-    target_branch: gh-pages
+    target_branch: master
     allow_empty_commit: true
     on:
       branch: master
