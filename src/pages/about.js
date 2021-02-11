@@ -39,7 +39,7 @@ export default class About extends Component {
           <r-cell span="3" span-s="2" span-xs="row" class="intro">
 
             <p>
-              My name is Rasmus Andersson. 
+              My name is Panda Zhang. 
               I’m a Chinese he/him living in ShenZhen, China. 
               Software is the medium through which I express myself.
             </p>
